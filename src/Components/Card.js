@@ -1,22 +1,18 @@
-import './App.css';
+import './Styles/Home-card.css';
 import React from 'react';
 
 
 
 function Card(props) {
-    const {products} = props;
     return (
-        products.map((product) =>( 
-        <div className="card" div key={product.id}>
-        <img className="card-image" src={product.image} alt={product.name}/>
+        <div className="card">
+        <img className="card-image" src={props.image} alt={props.name}/>
         <div className="card-text">
-        <h3>{product.name}</h3>
-        <p>€{product.price}</p>
+        <h3>{props.name}</h3>
+        <p>{props.text}</p>
         </div>
         </div>
-    ))
-        
-    );
+    )
 }
 
 

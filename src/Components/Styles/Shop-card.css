@@ -1,0 +1,19 @@
+.shop-card {
+    background-color: white;
+    width: 90%;
+    margin-top: 40px;
+    
+  }
+  
+  .shop-card-image{
+    width: 100%;
+  }
+  
+  .shop-card-text{
+    padding: 20px;
+  }
+  
+  .shop-card-text h3 {
+    margin-bottom: 0;
+  }
+

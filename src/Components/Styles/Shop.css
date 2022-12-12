@@ -1,0 +1,8 @@
+.Card-Shop-Container{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
