@@ -11,18 +11,34 @@ import Cart from './Components/Cart';
 function App() {
   const {products} = data;
   const [cartItems, setCartItems] = useState([]);
+
   const onAdd = (product) => {
-    const exist = cartItems.find(x=> x.id === product.id);
+    const exist = cartItems.find(item => item.id === product.id);
     if (exist) {
       setCartItems(
         cartItems.map((x) => 
-        x.id === product.id ? {...exist, qty : exist.qty+1} : x
+        x.id === product.id ? {...exist, qty: exist.qty + 1 } : x
         )
       );
-    } else {
-      setCartItems([...cartItems, {...product, qty: 1}]);
+    } 
+    
+    else {
+      setCartItems ([...cartItems, { ...product, qty: 1 }]);
     }
   };
+
+  const onRemove = (product) => {
+      const exist = cartItems.find((x) => x.id === product.id);
+      if(exist.qty === 1 ) {
+        setCartItems(cartItems.filter((x) => x.id !== product.id));
+      } else {
+        setCartItems(
+          cartItems.map((x) => 
+          x.id === product.id ? {...exist, qty: exist.qty - 1 } : x
+          )
+        );
+      }
+  }
 
   return (
   <BrowserRouter>
@@ -35,10 +51,10 @@ function App() {
       <Route path="/about" element={<About/>} />
       </Routes>
       <Routes>
-      <Route path="/Shop" element={<Shop onAdd = {onAdd} products={products}/>} />
+      <Route path="/Shop" element={<Shop onAdd = {onAdd} products={products} cartItems={cartItems}/>} />
       </Routes>
       <Routes>
-      <Route path="/cart" element={<Cart onAdd = {onAdd} cartItems={cartItems}/>} />
+      <Route path="/cart" element={<Cart onAdd = {onAdd} cartItems={cartItems} onRemove = {onRemove} />} />
       </Routes>
       
     </div>

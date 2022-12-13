@@ -6,12 +6,12 @@ import Footer from './Footer';
 
 
  function Shop (props) {
-      const {products, onAdd} = props;
+      const {cartItems, products, onAdd} = props;
   return (    
       <>
         <div className='Card-Shop-Container'>
         {products.map((product) =>(
-            <Items key={product.id} image={product.image} name={product.name} price={product.price} onAdd={onAdd}/>
+            <Items key={product.id} product={product} onAdd={onAdd} cartItems={cartItems}/>
   
         ))}  
         </div>

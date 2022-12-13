@@ -9,11 +9,12 @@ import "./Styles/Cart.css"
       <h1>Il tuo carrello è vuoto!</h1>
       <img src="https://i.ibb.co/d5ZHHVM/102661.png" width={"100px"} alt='empty-cart'></img>
       </div>}
-      {console.log (cartItems)}
+      {console.log(cartItems)}
       {cartItems.map((item) => (
         <div key={item.id} className="FullCart">
+          <div><img alt={item.name} src={item.image} height="100px"></img></div>
           <div><h1>{item.name}</h1> 
-            <h2>x{item.qty}</h2>
+            <h2>x{item.qty} x €{item.price}</h2>
           </div>
           <div className='QuantityButtons'>
             <button onClick={()=> onAdd(item)} className="add">+</button>
