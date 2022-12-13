@@ -10,17 +10,17 @@ function Navbar() {
             <a href="index.html" className="img">LOGO</a>
         </div>
         
-            <ul className="navlist">
-            <Link to = "/">
+            <ul className="navlist" style={{ textDecoration: 'none' }}>
+            <Link to = "/" style={{ textDecoration: 'none' }}>
                 <li className="navitem">Home</li>
             </Link>
-            <Link to = "/shop">
+            <Link to = "/shop" style={{ textDecoration: 'none' }}>
                 <li className="navitem">Shop</li>
             </Link>
-            <Link to = "/about">
+            <Link to = "/about" style={{ textDecoration: 'none' }}>
                 <li className="navitem">Chi siamo</li>
             </Link>
-            <Link to = "/Contacts">
+            <Link to = "/Contacts" style={{ textDecoration: 'none' }}>
                 <li className="navitem">Contatti</li>
             </Link>
             </ul>

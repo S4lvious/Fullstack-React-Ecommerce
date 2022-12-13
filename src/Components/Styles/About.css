@@ -1,0 +1,61 @@
+.cover{
+    font-size:x-large;
+    background-size: cover;
+    background-image: url("thumb-1920-953864.jpg");
+    color: white;
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-position-y: -100px;
+    }
+    
+.cover___filter{
+        background-color: black;
+        width: 100%;
+        height: 50vh;
+        position: absolute;
+        z-index: 0;
+        opacity: 0.2;
+    }
+    
+.cover___text{
+        position: relative;
+        font-size: xx-large;
+    }
+    .aboutus{
+        background-color: white;
+        max-width: 800px;
+        margin: 0px auto;
+        margin-top: -60px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .aboutus___text{
+        padding: 20px 40px;
+        line-height: 25px;
+    }
+    
+    .aboutus___text h2 {
+       text-align: center; 
+    }
+    
+
+    @media (max-width: 767px) {
+        .cover {
+            background-position: center;
+        }
+
+        .aboutus{
+            margin-top: 40px;
+            width: 80%;
+        }
+    
+        .aboutus___text {
+            line-height: normal;
+        }
+        
+    }
