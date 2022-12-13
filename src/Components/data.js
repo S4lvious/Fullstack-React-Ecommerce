@@ -49,7 +49,7 @@ const data = {
             image: 'https://i.ibb.co/6tyrfRm/shoes2.jpg'
         },
         {
-            id: "8",
+            id: "9",
             name: "NikeAir Force 9",
             price: 100.99,
             image: 'https://i.ibb.co/p26L4Rc/shoes3.jpg'

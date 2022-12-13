@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Components/Styles/App.css'
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
@@ -10,6 +10,8 @@ import Cart from './Components/Cart';
 
 function App() {
   const {products} = data;
+  const [cartItems, setCartItems] = useState([]);
+
   return (
   <BrowserRouter>
     <div className='App'>
@@ -24,7 +26,7 @@ function App() {
       <Route path="/Shop" element={<Shop products={products}/>} />
       </Routes>
       <Routes>
-      <Route path="/cart" element={<Cart/>} />
+      <Route path="/cart" element={<Cart cartItems={cartItems}/>} />
       </Routes>
       
     </div>

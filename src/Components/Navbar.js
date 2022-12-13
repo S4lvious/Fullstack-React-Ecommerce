@@ -2,13 +2,16 @@ import React from "react";
 import './Styles/Navbar.css'
 import { Link } from "react-router-dom";
 import {FaShoppingCart} from 'react-icons/fa'
+import {FaReact} from 'react-icons/fa'
 
 function Navbar() {
     return (
     <header className="header">
     <div className="navbar">
         <div className="logo">
-            <a href="index.html" className="img">LOGO</a>
+            <Link to = "/" style={{ textDecoration: 'none', color: 'white' }}>
+           <FaReact />
+           </Link>
         </div>
         
             <ul className="navlist" style={{ textDecoration: 'none' }}>
@@ -25,6 +28,9 @@ function Navbar() {
                 <li className="navitem">Contatti</li>
             </Link>
             </ul>
+            <Link to = "/Cart" style= {{textDecoration: 'none'}}>
+                <li className="navitem"><FaShoppingCart /></li>
+            </Link>
       
     </div>
     <div className="hamburger">

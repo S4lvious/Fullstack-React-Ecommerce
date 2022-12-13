@@ -8,6 +8,7 @@ function Items(props) {
         <div className="shop-card-container">
         <div className="shop-card">
         <img className="shop-card-image" src={props.image} alt={props.name}/>
+        <span className='button-container'><button className='button'>Aggiungi al carrello</button></span>
         <div className="shop-card-text">
         <h3>{props.name}</h3>
         <p>€{props.price}</p>
