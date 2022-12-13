@@ -4,3 +4,10 @@
     align-items: center;
     justify-content:center;
 }
+.FullCart{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
