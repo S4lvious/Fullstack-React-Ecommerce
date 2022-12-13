@@ -7,9 +7,9 @@ import Footer from "./Footer";
  function  Home () {
   return (
       <>
-      <section class="cover">
-            <div class="cover___filter"></div>
-                  <div class="cover___text">
+      <section class="cover-home">
+            <div class="cover___filter-home"></div>
+                  <div class="cover___text-home">
                         <h1>Streetwear Brand</h1>
                         <h2>This is the second phrases of the site.</h2>
                         <a href="Shop" className="button">Shop Now</a>

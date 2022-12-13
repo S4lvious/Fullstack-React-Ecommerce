@@ -14,3 +14,13 @@
     width: 80%;
     margin: 40px auto;
 }
+
+@media (max-width: 767px) {
+    .FullCart {
+        flex-direction: column;
+        gap: 0px;
+        padding: 10px;
+        width: 90%;
+        border: 0px;
+    }
+}
