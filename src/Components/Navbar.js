@@ -1,6 +1,7 @@
 import React from "react";
-import '../App.css'
+import './Styles/Navbar.css'
 import { Link } from "react-router-dom";
+import {FaShoppingCart} from 'react-icons/fa'
 
 function Navbar() {
     return (
