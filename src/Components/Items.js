@@ -10,7 +10,7 @@ function Items(props) {
         <img className="shop-card-image" src={props.image} alt={props.name}/>
         <div className="shop-card-text">
         <h3>{props.name}</h3>
-        <p>€{props.text}</p>
+        <p>€{props.price}</p>
         </div>
         </div>
         </div>

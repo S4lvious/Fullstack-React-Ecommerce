@@ -36,6 +36,24 @@ const data = {
             price: 84.99,
             image: 'https://i.ibb.co/qkpxxCL/shoes1.jpg'
         },
+        {
+            id: "7",
+            name: "NikeAir Force 7",
+            price: 100.00,
+            image: 'https://i.ibb.co/p26L4Rc/shoes3.jpg'
+        },
+        {
+            id: "8",
+            name: "NikeAir Force 8",
+            price: 99.99,
+            image: 'https://i.ibb.co/6tyrfRm/shoes2.jpg'
+        },
+        {
+            id: "8",
+            name: "NikeAir Force 9",
+            price: 100.99,
+            image: 'https://i.ibb.co/p26L4Rc/shoes3.jpg'
+        },
 
 
     ],

@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import data from './Components/data';
 
 function App() {
+  const {products} = data;
   return (
   <BrowserRouter>
     <div className='App'>
@@ -19,7 +20,7 @@ function App() {
       <Route path="/about" element={<About/>} />
       </Routes>
       <Routes>
-      <Route path="/Shop" element={<Shop products={data}/>} />
+      <Route path="/Shop" element={<Shop products={products}/>} />
       </Routes>
     </div>
   </BrowserRouter>
