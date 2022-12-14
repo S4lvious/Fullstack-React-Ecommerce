@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import About from './Components/About';
 import Shop from './Components/Shop';
+import Contact from './Components/Contact';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import data from './Components/data';
 import Cart from './Components/Cart';
@@ -49,6 +50,9 @@ function App() {
       </Routes>
       <Routes>
       <Route path="/about" element={<About/>} />
+      </Routes>
+      <Routes>
+      <Route path="/contact" element={<Contact/>} />
       </Routes>
       <Routes>
       <Route path="/Shop" element={<Shop onAdd = {onAdd} products={products} cartItems={cartItems}/>} />
