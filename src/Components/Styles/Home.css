@@ -58,4 +58,8 @@ SMARTPHONE
     .card-container{
     flex-direction: column;
     }
+
+    header{
+        position: fixed;
+    }
 }

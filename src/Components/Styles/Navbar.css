@@ -93,27 +93,32 @@
       transition: all 0.3s;
       margin-top: -20px;
       height: 25%;
+      z-index: 3;
 
   }
   
     .hamburger{
       display: block;
+      cursor: pointer;
     }
   
     .hamburger.active .bar:nth-child(1){
       transform: translateY(8px) rotate(45deg);
+      cursor: pointer;
     }
   
     .hamburger.active .bar:nth-child(2){
       opacity: 0;
+      cursor: pointer;
     }
   
     .hamburger.active .bar:nth-child(3){
       transform: translateY(-8px) rotate(-45deg);
+      cursor: pointer;
     }
 
-    .header{
+    header {
       position: fixed;
-      width: 100%;
+      top: 0;
     }
 }

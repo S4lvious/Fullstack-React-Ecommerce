@@ -1,9 +1,16 @@
+
+.CartItemsContainer{
+        width: 80%;
+        margin: auto;
+    }
+
 .EmptyCart{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:center;
     height: 100vh;
+    gap: 10px;
 }
 .FullCart{
     display: flex;
@@ -11,9 +18,8 @@
     align-items: center;
     justify-content: center;
     gap: 100px;
-    border: 2px black solid;
     width: 80%;
-    margin: 40px auto;
+    margin:40px auto;
 }
 
 @media (max-width: 767px) {

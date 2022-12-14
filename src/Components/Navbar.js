@@ -27,9 +27,6 @@ function Navbar() {
             <Link to = "/about" style={{ textDecoration: 'none' }}>
                 <li className="navitem">Chi siamo</li>
             </Link>
-            <Link to = "/Contacts" style={{ textDecoration: 'none' }}>
-                <li className="navitem">Contatti</li>
-            </Link>
             </ul>
             <Link to = "/Cart" style= {{textDecoration: 'none'}}>
                 <li className="navitem"><FaShoppingCart /></li>
