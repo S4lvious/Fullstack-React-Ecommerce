@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import './Styles/Navbar.css'
 import { Link } from "react-router-dom";
 import {FaShoppingCart} from 'react-icons/fa'
 import {FaReact} from 'react-icons/fa'
 
 function Navbar() {
+    const [showNavlist, setNavlist] = useState(false);
+
+
     return (
     <header className="header">
     <div className="navbar">
@@ -14,7 +17,7 @@ function Navbar() {
            </Link>
         </div>
         
-            <ul className="navlist" style={{ textDecoration: 'none' }}>
+            <ul className={showNavlist ? "show" : "navlist"} style={{ textDecoration: 'none' }}>
             <Link to = "/" style={{ textDecoration: 'none' }}>
                 <li className="navitem">Home</li>
             </Link>
@@ -33,7 +36,7 @@ function Navbar() {
             </Link>
       
     </div>
-    <div className="hamburger">
+    <div className={showNavlist ? "hamburger.active" : "hamburger"} onClick={() => setNavlist(!showNavlist)}>
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
