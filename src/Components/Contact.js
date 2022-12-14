@@ -22,8 +22,7 @@ export default function Contact() {
             <label>Descrivi il tuo problema</label>
             <input type={Text} placeholder="Ho avuto un problema con un ordine..." name='Problema'></input>
             <input type ={'submit'}></input>
-            
-        </form>
+            </form>
         <Footer />
     </div>
   )
