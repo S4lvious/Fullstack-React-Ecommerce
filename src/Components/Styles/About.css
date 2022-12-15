@@ -32,6 +32,7 @@
         margin-top: -60px;
         position: relative;
         z-index: 1;
+        margin-bottom: 40px;
     }
     
     .aboutus___text{
@@ -52,10 +53,13 @@
         .aboutus{
             margin-top: 40px;
             width: 80%;
+            
         }
     
         .aboutus___text {
             line-height: normal;
         }
+
+        
         
     }

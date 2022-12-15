@@ -20,3 +20,19 @@ input {
     box-sizing: border-box;
     
 }
+
+@media (max-width: 767px) {
+    .cover {
+        background-position: center;
+    }
+
+    .contact-form{
+        margin-top: 40px;
+        width: 80%;
+    }
+
+    .aboutus___text {
+        line-height: normal;
+    }
+    
+}
