@@ -42,7 +42,7 @@ function App() {
   }
 
   return (
-  <BrowserRouter>
+  <BrowserRouter basename='/Fullstack-React-Ecommerce'>
     <div className='App'>
       <Navbar />
       <Routes>

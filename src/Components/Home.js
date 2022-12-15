@@ -3,6 +3,7 @@ import './Styles/Home.css';
 import Card from "./Card";
 import Banner from "./Banner";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
  function  Home () {
   return (
@@ -12,7 +13,9 @@ import Footer from "./Footer";
                   <div class="cover___text-home">
                         <h1>Streetwear Brand</h1>
                         <h2>This is the second phrases of the site.</h2>
-                        <a href="Shop" className="button">Shop Now</a>
+                  <Link to = "/shop" style={{ textDecoration: 'none' }}>
+                   <button className="button">Shop</button>
+                  </Link>
                   </div>
       </section>  
       <section className='card-container'>

@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Styles/Cart.css"
+import { Link } from 'react-router-dom';
 
  function Cart(props) {
   const {cartItems, onAdd, onRemove} = props;
@@ -8,7 +9,9 @@ import "./Styles/Cart.css"
     <section className='CartItemsContainer'>
       {cartItems.length === 0 && <div className='EmptyCart'>
       <h1>Il tuo carrello è vuoto!</h1>
-      <a href="shop" class="banner-button">Vai allo shop</a>
+      <Link to = "/shop" style={{ textDecoration: 'none' }}>
+                   <button className="banner-button">Shop</button>
+                  </Link>
       </div>}
       {console.log(cartItems)}
       {cartItems.map((item) => (
